@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevTrio - Desenvolvedores de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navBrand">DevTrio</div>
+            <nav class="navMenu" id="navMenu">
+                <a href="#home" class="navLink">Início</a>
+                <a href="#projects" class="navLink">Projetos</a>
+                <a href="#team" class="navLink">Equipe</a>
+                <a href="#contact" class="navLink">Contato</a>
+            </nav>
+            <button class="mobileMenuToggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="heroContent">
+                <div class="heroText">
+                    <h1 class="heroTitle">Somos <span class="gradientText">DevTrio</span></h1>
+                    <h2 class="heroSubtitle">Desenvolvedores de Software</h2>
+                    <p class="heroDescription">
+                        Três estudantes apaixonados por tecnologia, especializados em desenvolvimento web moderno,
+                        mobile e soluções inovadoras.
+                        Trabalhamos com React, Node.js, Python e muito mais.
+                    </p>
+                    <div class="heroButtons">
+                        <button class="btn btnPrimary">Conheça nosso trabalho</button>
+                        <button class="btn btnOutline">Veja nossos projetos</button>
+                    </div>
+                </div>
+                <div class="heroImages">
+                    <div class="imageBox">
+                        <div class="imageColumn">
+                            <img src="img/pedro.jpeg" class="heroImage" />
+                            <img src="img/artur.jpeg" class="heroImage" />
+                        </div>
+                        <div class="imageColumnRight">
+                            <img src="img/lorenzo.jpeg" class="heroImage" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2 class="sectionTitle">Nossos Projetos</h2>
+                <p class="sectionDescription">
+                    Projetos desenvolvidos durante o semestre, aplicando conhecimentos em diferentes tecnologias e
+                    frameworks modernos.
+                </p>
+            </div>
+            <div class="projectsBox">
+                <div class="projectCard">
+                    <div class="projectImage">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop" />
+                    </div>
+                    <div class="projectContent">
+                        <h3 class="projectTitle">E-commerce Platform</h3>
+                        <p class="projectDescription">
+                            Plataforma completa de e-commerce com carrinho, pagamentos e painel administrativo moderno.
+                        </p>
+                        <div class="projectTags">
+                            <span class="tag tagReact">React</span>
+                            <span class="tag tagNode">Node.js</span>
+                            <span class="tag tagMongo">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <div class="projectImage">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop" />
+                    </div>
+                    <div class="projectContent">
+                        <h3 class="projectTitle">Task Manager App</h3>
+                        <p class="projectDescription">
+                            Aplicativo móvel para gerenciamento de tarefas com sincronização em tempo real.
+                        </p>
+                        <div class="projectTags">
+                            <span class="tag tagReact">React Native</span>
+                            <span class="tag tagFirebase">Firebase</span>
+                            <span class="tag tagTypescript">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <div class="projectImage">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" />
+                    </div>
+                    <div class="projectContent">
+                        <h3 class="projectTitle">Analytics Dashboard</h3>
+                        <p class="projectDescription">
+                            Dashboard interativo para análise de dados com visualizações dinâmicas.
+                        </p>
+                        <div class="projectTags">
+                            <span class="tag tagVue">Vue.js</span>
+                            <span class="tag tagPython">Python</span>
+                            <span class="tag tagD3">D3.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2 class="sectionTitle">Nossa Equipe</h2>
+                <p class="sectionDescription">
+                    Conheça os desenvolvedores por trás dos projetos. Cada um com suas especialidades e paixões únicas.
+                </p>
+            </div>
+            <div class="teamBox">
+                <div class="teamCard">
+                    <div class="teamAvatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" />
+                    </div>
+                    <h3 class="teamName">Alex Silva</h3>
+                    <p class="teamRole">Frontend Developer</p>
+                    <p class="teamDescription">
+                        Especialista em React e Vue.js, apaixonado por criar interfaces
+                        intuitivas e experiências de usuário excepcionais.
+                    </p>
+                    <div class="teamSocial">
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="teamCard">
+                    <div class="teamAvatar">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face" />
+                    </div>
+                    <h3 class="teamName">Maria Santos</h3>
+                    <p class="teamRole">Backend Developer</p>
+                    <p class="teamDescription">
+                        Focada em Node.js e Python, desenvolve APIs robustas e
+                        arquiteturas escaláveis para aplicações modernas.
+                    </p>
+                    <div class="teamSocial">
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="teamCard">
+                    <div class="teamAvatar">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&crop=face" />
+                    </div>
+                    <h3 class="teamName">Carlos Lima</h3>
+                    <p class="teamRole">Mobile Developer</p>
+                    <p class="teamDescription">
+                        Especialista em React Native e Flutter, cria aplicativos mobile
+                        nativos com performance e qualidade excepcionais.
+                    </p>
+                    <div class="teamSocial">
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="socialLink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contactContent">
+                <h2 class="sectionTitle">Vamos trabalhar juntos?</h2>
+                <p class="sectionDescription">
+                    Estamos sempre abertos a novos desafios e oportunidades. Entre em contato conosco!
+                </p>
+                <div class="contactButtons">
+                    <button class="btn btnPrimary">Enviar Email</button>
+                    <button class="btn btnOutline">WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerContent">
+                <div class="footerBrand">DevTrio</div>
+                <div class="footerSocial">
+                    <a href="#" class="socialLink">GitHub</a>
+                    <a href="#" class="socialLink">LinkedIn</a>
+                    <a href="#" class="socialLink">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

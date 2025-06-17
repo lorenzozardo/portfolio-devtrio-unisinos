@@ -1,0 +1,562 @@
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Roboto, sans-serif;
+    background: #18202e;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.gradientText {
+    background-color: #2d77d1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Títulos e descrições de seções */
+.sectionTitle {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.sectionDescription {
+    font-size: 18px;
+    color: #94a3b8;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sectionHeader {
+    margin-bottom: 35px;
+}
+
+/* Cabeçalho fixo com menu de navegação */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0b0f1acc;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #1e293b80;
+    z-index: 1000;
+    padding: 16px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBrand {
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #2d77d1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navMenu {
+    display: flex;
+    gap: 32px;
+}
+
+.navLink {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navLink:hover {
+    color: #2d77d1;
+}
+
+.mobileMenuToggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.mobileMenuToggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #cbd5e1;
+}
+
+/* Estilo geral dos botões */
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.btnPrimary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btnPrimary:hover {
+    background-color: #224f97;
+}
+
+.btnOutline {
+    background: transparent;
+    border: 1px solid #475569;
+    color: #cbd5e1;
+}
+
+.btnOutline:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+.btnLink {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btnLink:hover {
+    color: #2d77d1;
+}
+
+/* Seção principal com título, descrição e imagens */
+.hero {
+    padding: 128px 0 96px;
+    margin-top: 40px;
+}
+
+.heroContent {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.heroText {
+    width: 50%;
+}
+
+.heroTitle {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.heroSubtitle {
+    font-size: 24px;
+    color: #94a3b8;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.heroDescription {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.heroButtons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.heroImages {
+    width: 50%;
+}
+
+/* Galeria de imagens da seção Hero */
+.imageBox {
+    display: flex;
+    gap: 16px;
+}
+
+.imageColumn {
+    width: 50%;
+}
+
+.imageColumnRight {
+    width: 50%;
+}
+
+.imageColumn .heroImage,
+.imageColumnRight .heroImage {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.imageColumn .heroImage:first-child {
+    height: 180px;
+}
+
+.imageColumn .heroImage:last-child {
+    height: 180px;
+    margin-top: 16px;
+}
+
+.imageColumnRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageColumnRight .heroImage {
+    height: 280px;
+}
+
+/* Seção de projetos */
+.projects {
+    padding: 40px 0;
+    background: rgba(30, 41, 59, 0.3);
+}
+
+.projectsBox {
+    display: flex;
+    gap: 32px;
+}
+
+.projectCard {
+    background: #1e293b;
+    border: 1px solid #4755694d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.projectCard:hover {
+    border-color: #2d77d1;
+}
+
+.projectImage {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.projectImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projectContent {
+    padding: 20px 25px 10px 25px;
+}
+
+.projectTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.projectDescription {
+    color: #94a3b8;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.tag {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Cores das tecnologias */
+.tagReact { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+.tagNode { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+.tagMongo { background: rgba(168, 85, 247, 0.2); color: #c084fc; }
+.tagFirebase { background: rgba(251, 146, 60, 0.2); color: #fb923c; }
+.tagTypescript { background: rgba(234, 179, 8, 0.2); color: #facc15; }
+.tagVue { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+.tagPython { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+.tagD3 { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+.projectActions {
+    display: flex;
+    gap: 16px;
+}
+
+/* Seção da equipe */
+.team {
+    padding: 40px 0;
+}
+
+.teamBox {
+    display: flex;
+    gap: 32px;
+}
+
+.teamCard {
+    background: #1e293b;
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.teamCard:hover {
+    border-color: #2d77d1;
+}
+
+.teamAvatar {
+    margin-bottom: 24px;
+}
+
+.teamAvatar img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.teamName {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.teamRole {
+    color: #2d77d1;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.teamDescription {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.teamSocial {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #4755694d;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socialLink:hover {
+    color: #2d77d1;
+}
+
+/* Seção de contato final */
+.contact {
+    padding: 80px 0;
+    background: rgba(30, 41, 59, 0.3);
+}
+
+.contactContent {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactButtons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+/* Rodapé da página */
+.footer {
+    padding: 32px 0;
+    background: #0b0f1a;
+    border-top: 1px solid rgba(71, 85, 105, 0.3);
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerBrand {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(to right, #c084fc, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footerSocial {
+    display: flex;
+    gap: 16px;
+}
+
+.footerSocial .socialLink {
+    width: 44px;
+    height: 44px;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+    .navMenu {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0b0f1af2;
+        backdrop-filter: blur(12px);
+        flex-direction: column;
+        padding: 20px 30px;
+        gap: 15px;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+
+    .navMenu.active {
+        opacity: 1;
+    }
+
+    .mobileMenuToggle {
+        display: flex;
+    }
+
+    .heroContent {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .heroText {
+        width: 100%;
+    }
+
+    .heroImages {
+        width: 100%;
+    }
+
+    .heroTitle {
+        font-size: 50px;
+    }
+
+    .imageBox {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .heroTitle {
+        font-size: 30px;
+    }
+
+    .heroSubtitle {
+        font-size: 20px;
+    }
+
+    .heroDescription {
+        font-size: 15px;
+    }
+
+    .heroButtons {
+        justify-content: center;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imageBox {
+        max-width: 300px;
+    }
+
+    .imageColumn .heroImage:first-child {
+        height: 120px;
+    }
+
+    .imageColumn .heroImage:last-child {
+        height: 120px;
+    }
+
+    .imageColumnRight .heroImage {
+        height: 150px;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .projectsBox, .teamBox {
+        flex-direction: column;
+    }
+
+    .contactButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+}
