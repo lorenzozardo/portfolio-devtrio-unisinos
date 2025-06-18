@@ -1,32 +1,37 @@
-/* Reset e configurações globais */
+/* Reset geral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Para âncora não ficar embaixo do header */
+html {
+    scroll-padding-top: 80px;
+}
+
+/* Estilo base do body */
 body {
     font-family: "Inter", Roboto, sans-serif;
-    background: #18202e;
+    background-color: #18202e;
     color: #ffffff;
     line-height: 1.6;
     min-height: 100vh;
 }
 
+/* Limita largura e aplica espaçamento lateral */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
+/* Texto com gradiente azul */
 .gradientText {
-    background-color: #2d77d1;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #2d77d1;
 }
 
-/* Títulos e descrições de seções */
+/* Título e descrição das seções */
 .sectionTitle {
     font-size: 40px;
     font-weight: 700;
@@ -46,7 +51,7 @@ body {
     margin-bottom: 35px;
 }
 
-/* Cabeçalho fixo com menu de navegação */
+/* Header fixo */
 .header {
     position: fixed;
     top: 0;
@@ -64,7 +69,8 @@ body {
     align-items: center;
 }
 
-.navBrand {
+/* Logo no menu */
+.navBrand .navLink {
     font-size: 24px;
     font-weight: 700;
     background-color: #2d77d1;
@@ -73,11 +79,13 @@ body {
     background-clip: text;
 }
 
+/* Menu */
 .navMenu {
     display: flex;
     gap: 32px;
 }
 
+/* Links do menu */
 .navLink {
     color: #cbd5e1;
     text-decoration: none;
@@ -90,6 +98,7 @@ body {
     color: #2d77d1;
 }
 
+/* Menu hamburguer mobile */
 .mobileMenuToggle {
     display: none;
     flex-direction: column;
@@ -105,7 +114,7 @@ body {
     background-color: #cbd5e1;
 }
 
-/* Estilo geral dos botões */
+/* Botão padrão */
 .btn {
     padding: 12px 24px;
     border-radius: 8px;
@@ -117,8 +126,10 @@ body {
     align-items: center;
     gap: 8px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
+/* Botão principal */
 .btnPrimary {
     background-color: #3b82f6;
     color: white;
@@ -128,33 +139,22 @@ body {
     background-color: #224f97;
 }
 
-.btnOutline {
-    background: transparent;
-    border: 1px solid #475569;
-    color: #cbd5e1;
+.btn a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.btnOutline:hover {
-    border-color: #3b82f6;
-    color: #3b82f6;
+/* Botão do WhatsApp */
+.btnWhats {
+    background-color: #21b658;
+    color: #fff;
 }
 
-.btnLink {
-    background: none;
-    border: none;
-    color: #94a3b8;
-    cursor: pointer;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.btnWhats:hover {
+    background-color: #1d8342;
 }
 
-.btnLink:hover {
-    color: #2d77d1;
-}
-
-/* Seção principal com título, descrição e imagens */
+/* Seção principal com texto e imagens */
 .hero {
     padding: 128px 0 96px;
     margin-top: 40px;
@@ -197,20 +197,17 @@ body {
     flex-wrap: wrap;
 }
 
+/* Imagens da seção principal */
 .heroImages {
     width: 50%;
 }
 
-/* Galeria de imagens da seção Hero */
 .imageBox {
     display: flex;
     gap: 16px;
 }
 
-.imageColumn {
-    width: 50%;
-}
-
+.imageColumn,
 .imageColumnRight {
     width: 50%;
 }
@@ -222,12 +219,12 @@ body {
     object-fit: cover;
 }
 
-.imageColumn .heroImage:first-child {
+.imageColumn .heroImage:first-child,
+.imageColumn .heroImage:last-child {
     height: 180px;
 }
 
 .imageColumn .heroImage:last-child {
-    height: 180px;
     margin-top: 16px;
 }
 
@@ -244,16 +241,20 @@ body {
 /* Seção de projetos */
 .projects {
     padding: 40px 0;
-    background: rgba(30, 41, 59, 0.3);
+    background-color: #1e293b4d;
 }
 
 .projectsBox {
     display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
     gap: 32px;
 }
 
 .projectCard {
-    background: #1e293b;
+    width: 100%;
+    background-color: #1e293b;
     border: 1px solid #4755694d;
     border-radius: 12px;
     overflow: hidden;
@@ -292,6 +293,7 @@ body {
     font-size: 14px;
 }
 
+/* Tags de tecnologias */
 .projectTags {
     display: flex;
     flex-wrap: wrap;
@@ -306,20 +308,10 @@ body {
     font-weight: 500;
 }
 
-/* Cores das tecnologias */
-.tagReact { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
-.tagNode { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
-.tagMongo { background: rgba(168, 85, 247, 0.2); color: #c084fc; }
-.tagFirebase { background: rgba(251, 146, 60, 0.2); color: #fb923c; }
-.tagTypescript { background: rgba(234, 179, 8, 0.2); color: #facc15; }
-.tagVue { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
-.tagPython { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
-.tagD3 { background: rgba(239, 68, 68, 0.2); color: #f87171; }
-
-.projectActions {
-    display: flex;
-    gap: 16px;
-}
+/* Cores das tags */
+.tagHTML { background-color: #3b82f633; color: #60a5fa; }
+.tagCSS  { background-color: #22c55e33; color: #4ade80; }
+.tagJS   { background-color: #eab30833; color: #facc15; }
 
 /* Seção da equipe */
 .team {
@@ -332,8 +324,9 @@ body {
 }
 
 .teamCard {
-    background: #1e293b;
-    border: 1px solid rgba(71, 85, 105, 0.3);
+    width: 100%;
+    background-color: #1e293b;
+    border: 1px solid #4755694d;
     border-radius: 12px;
     padding: 32px;
     text-align: center;
@@ -344,11 +337,11 @@ body {
     border-color: #2d77d1;
 }
 
-.teamAvatar {
+.teamPhoto {
     margin-bottom: 24px;
 }
 
-.teamAvatar img {
+.teamPhoto img {
     width: 96px;
     height: 96px;
     border-radius: 50%;
@@ -380,6 +373,7 @@ body {
     gap: 12px;
 }
 
+/* Links sociais da equipe */
 .socialLink {
     display: flex;
     align-items: center;
@@ -387,20 +381,19 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    background: #4755694d;
-    color: #94a3b8;
+    background-color: #bbc3ce;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .socialLink:hover {
-    color: #2d77d1;
+    background-color: #9b9b9b;
 }
 
-/* Seção de contato final */
+/* Seção de contato */
 .contact {
     padding: 80px 0;
-    background: rgba(30, 41, 59, 0.3);
+    background-color: #1e293b4d;
 }
 
 .contactContent {
@@ -417,26 +410,23 @@ body {
     flex-wrap: wrap;
 }
 
-/* Rodapé da página */
+/* Rodapé */
 .footer {
     padding: 32px 0;
-    background: #0b0f1a;
-    border-top: 1px solid rgba(71, 85, 105, 0.3);
+    background-color: #0b0f1a;
+    border-top: 1px solid #4755694d;
 }
 
 .footerContent {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .footerBrand {
     font-size: 24px;
     font-weight: 700;
-    background: linear-gradient(to right, #c084fc, #60a5fa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #2d77d1;
 }
 
 .footerSocial {
@@ -449,14 +439,15 @@ body {
     height: 44px;
 }
 
-/* Mobile */
+/* Responsivo (mobile) */
 @media (max-width: 1024px) {
+    /* Menu mobile embaixo do header */
     .navMenu {
         position: fixed;
         top: 100%;
         left: 0;
         width: 100%;
-        background: #0b0f1af2;
+        background-color: #0b0f1af2;
         backdrop-filter: blur(12px);
         flex-direction: column;
         padding: 20px 30px;
@@ -473,31 +464,16 @@ body {
         display: flex;
     }
 
+    /* Layout do hero em coluna */
     .heroContent {
         flex-direction: column;
         gap: 50px;
         text-align: center;
     }
 
-    .heroText {
-        width: 100%;
-    }
-
+    .heroText,
     .heroImages {
         width: 100%;
-    }
-
-    .heroTitle {
-        font-size: 50px;
-    }
-
-    .imageBox {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .hero {
-        padding: 4rem 0 3rem;
     }
 
     .heroTitle {
@@ -521,14 +497,13 @@ body {
         justify-content: center;
     }
 
+    /* Imagens menores no mobile */
     .imageBox {
         max-width: 300px;
+        margin: 0 auto;
     }
 
-    .imageColumn .heroImage:first-child {
-        height: 120px;
-    }
-
+    .imageColumn .heroImage:first-child,
     .imageColumn .heroImage:last-child {
         height: 120px;
     }
@@ -541,7 +516,9 @@ body {
         font-size: 2rem;
     }
 
-    .projectsBox, .teamBox {
+    .projects,
+    .projectsBox,
+    .teamBox {
         flex-direction: column;
     }
 

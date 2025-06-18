@@ -1,6 +1,6 @@
 // Abre/fecha o menu mobile
-const toggle = document.getElementById('mobileToggle');
-const menu = document.getElementById('navMenu');
+const toggle = document.querySelector('.mobileMenuToggle');
+const menu = document.querySelector('.navMenu');
 
 toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
