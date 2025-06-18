@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevTrio - Desenvolvedores de Software</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Cabeçalho fixo com logo e menu -->
@@ -26,168 +27,179 @@
         </div>
     </header>
 
-    <!-- Seção principal com título e imagens -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="heroContent">
-                <div class="heroText">
-                    <h1 class="heroTitle">Somos <span class="gradientText">DevTrio</span></h1>
-                    <h2 class="heroSubtitle">Desenvolvedores de Software</h2>
-                    <p class="heroDescription">Três estudantes apaixonados por tecnologia, especializados em desenvolvimento web moderno e soluções inovadoras. Trabalhamos com HTML, CSS, Javascript, React e muito mais.</p>
-                    <div class="heroButtons">
-                        <a href="#projects" class="btn btnPrimary">Conheça nossos projetos</a>
-                    </div>
-                </div>
-                <div class="heroImages">
-                    <div class="imageBox">
-                        <div class="imageColumn">
-                            <img src="img/pedro.jpeg" class="heroImage" />
-                            <img src="img/arthur.jpeg" class="heroImage" />
-                        </div>
-                        <div class="imageColumnRight">
-                            <img src="img/lorenzo.jpeg" class="heroImage" />
+    <!-- Seção principal com título e imagens do trio -->
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="heroContent">
+                    <div class="heroText">
+                        <h1 class="heroTitle">Somos <span class="colorText">DevTrio</span></h1>
+                        <h2 class="heroSubtitle">Desenvolvedores de Software</h2>
+                        <p class="heroDescription">Três estudantes apaixonados por tecnologia, especializados em desenvolvimento web moderno e soluções inovadoras. Trabalhamos com HTML, CSS, Javascript, React e muito mais.</p>
+                        <div class="heroButtons">
+                            <a href="#projects" class="btn btnPrimary">Conheça nossos projetos</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção com os projetos -->
-    <section id="projects" class="projects">
-        <div class="sectionHeader">
-            <h2 class="sectionTitle">Nossos Projetos</h2>
-            <p class="sectionDescription">Projetos desenvolvidos durante o semestre.</p>
-        </div>
-        <div class="projectsBox">
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="img/projetoGuiado1.png" />
-                </div>
-                <div class="projectContent">
-                    <h3 class="projectTitle">Projeto Guiado 1</h3>
-                    <p class="projectDescription">
-                        Plataforma completa de e-commerce com carrinho, pagamentos e painel administrativo moderno.
-                    </p>
-                    <div class="projectTags">
-                        <span class="tag tagHTML">HTML</span>
-                        <span class="tag tagCSS">CSS</span>
+                    <div class="heroImages">
+                        <div class="imageBox">
+                            <div class="imageColumn">
+                                <img src="img/pedro.jpeg" class="heroImage" />
+                                <img src="img/arthur.jpeg" class="heroImage" />
+                            </div>
+                            <div class="imageColumnRight">
+                                <img src="img/lorenzo.jpeg" class="heroImage" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="img/projetoGuiado3.png" />
-                </div>
-                <div class="projectContent">
-                    <h3 class="projectTitle">Projeto Guiado 3</h3>
-                    <p class="projectDescription">Aplicativo móvel para gerenciamento de tarefas com sincronização em tempo real.</p>
-                    <div class="projectTags">
-                        <span class="tag tagHTML">HTML</span>
-                        <span class="tag tagCSS">CSS</span>
-                        <span class="tag tagJS">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="img/projetoGuiado4.png" />
-                </div>
-                <div class="projectContent">
-                    <h3 class="projectTitle">Projeto Guiado 4</h3>
-                    <p class="projectDescription">Dashboard interativo para análise de dados com visualizações dinâmicas.</p>
-                    <div class="projectTags">
-                        <span class="tag tagHTML">HTML</span>
-                        <span class="tag tagCSS">CSS</span>
-                        <span class="tag tagJS">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="img/projetoGuiado5.png" />
-                </div>
-                <div class="projectContent">
-                    <h3 class="projectTitle">Projeto Guiado 5</h3>
-                    <p class="projectDescription">Dashboard interativo para análise de dados com visualizações dinâmicas.</p>
-                    <div class="projectTags">
-                        <span class="tag tagHTML">HTML</span>
-                        <span class="tag tagCSS">CSS</span>
-                        <span class="tag tagJS">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção com a equipe -->
-    <section id="team" class="team">
-        <div class="container">
+        <!-- Seção com os projetos -->
+        <section id="projects" class="projects">
             <div class="sectionHeader">
-                <h2 class="sectionTitle">Nossa Equipe</h2>
-                <p class="sectionDescription">
-                    Conheça os desenvolvedores por trás dos projetos. Cada um com suas especialidades e paixões únicas.
-                </p>
+                <h2 class="sectionTitle">Nossos Projetos</h2>
+                <p class="sectionDescription">Projetos desenvolvidos durante o semestre.</p>
             </div>
-            <div class="teamBox">
-                <div class="teamCard">
-                    <div class="teamPhoto">
-                        <img src="img/lorenzo.jpeg"/>
-                    </div>
-                    <h3 class="teamName">Lorenzo</h3>
-                    <p class="teamRole">Front-end Developer</p>
-                    <p class="teamDescription">Especialista em HTML, CSS, Javascript e React.</p>
-                    <div class="teamSocial">
-                        <a href="https://github.com/lorenzozardo" target="_blank" class="socialLink"><img src="img/github.svg"></a>
-                        <a href="https://www.linkedin.com/in/lorenzo-zardo/" target="_blank" class="socialLink"><img src="img/linkedin.svg"></a>
-                    </div>
-                </div>
-                
-                <div class="teamCard">
-                    <div class="teamPhoto">
-                        <img src="img/pedro.jpeg" />
-                    </div>
-                    <h3 class="teamName">Pedro</h3>
-                    <p class="teamRole">Full-stack</p>
-                    <p class="teamDescription">Especialista em C#, HTML, CSS, JavaScript e React.</p>
-                    <div class="teamSocial">
-                        <a href="https://github.com/PedroFontanaMartins" target="_blank" class="socialLink"><img src="img/github.svg"></a>
-                        <a href="https://www.linkedin.com/in/pedro-fontana-martins-7984a12b0/" target="_blank" class="socialLink"><img src="img/linkedin.svg"></a>
+            <div class="projectsBox">
+                <div class="projectCard">
+                    <a href="project1.html">
+                        <div class="projectImage">
+                            <img src="img/projetoGuiado1.png" />
+                        </div>
+                    </a>
+                    <div class="projectContent">
+                        <h3 class="projectTitle">Projeto Guiado 1</h3>
+                        <p class="projectDescription">Primeiro projeto guiado da disciplina, projeto simples, com uma página em HTML e CSS.</p>
+                        <div class="projectTags">
+                            <span class="tag tagHTML">HTML</span>
+                            <span class="tag tagCSS">CSS</span>
+                        </div>
+                        <a href="project1.html" class="btn btnProject">Ver Projeto</a>
                     </div>
                 </div>
-                
-                <div class="teamCard">
-                    <div class="teamPhoto">
-                        <img src="img/arthur.jpeg" />
-                    </div>
-                    <h3 class="teamName">Arthur</h3>
-                    <p class="teamRole">Front-end Developer</p>
-                    <p class="teamDescription">Especialista em HTML, CSS, JavaScript e React.</p>
-                    <div class="teamSocial">
-                        <a href="https://github.com/arthuroliveira" target="_blank" class="socialLink"><img src="img/github.svg"></a>
-                        <a href="https://www.linkedin.com/in/arthur-oliveira-94770626a/" target="_blank" class="socialLink"><img src="img/linkedin.svg"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Seção de contato -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contactContent">
-                <h2 class="sectionTitle">Vamos trabalhar juntos?</h2>
-                <p class="sectionDescription">Estamos sempre abertos a novos desafios e oportunidades. Entre em contato conosco!</p>
-                <div class="contactButtons">
-                    <a href="mailto:contato@devtrio.com" target="_blank" class="btn btnPrimary">Enviar Email</a>
-                    <a href="https://wa.me/5551999999999" target="_blank" class="btn btnWhats">WhatsApp</a>
+                <div class="projectCard">
+                    <a href="project3.html">
+                        <div class="projectImage">
+                            <img src="img/projetoGuiado3.png" />
+                        </div>
+                    </a>
+                    <div class="projectContent">
+                        <h3 class="projectTitle">Projeto Guiado 3</h3>
+                        <p class="projectDescription">Reprodução da tela de login do Instagram, responsiva para desktop e mobile, utilizando HTML e CSS.</p>
+                        <div class="projectTags">
+                            <span class="tag tagHTML">HTML</span>
+                            <span class="tag tagCSS">CSS</span>
+                        </div>
+                        <a href="project3.html" class="btn btnProject">Ver Projeto</a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <a href="project4.html">
+                        <div class="projectImage">
+                            <img src="img/projetoGuiado4.png" />
+                        </div>
+                    </a>
+                    <div class="projectContent">
+                        <h3 class="projectTitle">Projeto Guiado 4</h3>
+                        <p class="projectDescription">Gerador de tabuada, utilizando HTML, CSS e JavaScript para manipulação de dados e exibição dinâmica.</p>
+                        <div class="projectTags">
+                            <span class="tag tagHTML">HTML</span>
+                            <span class="tag tagCSS">CSS</span>
+                            <span class="tag tagJS">JavaScript</span>
+                        </div>
+                        <a href="project4.html" class="btn btnProject">Ver Projeto</a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <a href="project5.html">
+                        <div class="projectImage">
+                            <img src="img/projetoGuiado5.png" />
+                        </div>
+                    </a>
+                    <div class="projectContent">
+                        <h3 class="projectTitle">Projeto Guiado 5</h3>
+                        <p class="projectDescription">Gerador de QR Code a partir da URL fornecida pelo usuário, utilizando HTML, CSS e Javascript.</p>
+                        <div class="projectTags">
+                            <span class="tag tagHTML">HTML</span>
+                            <span class="tag tagCSS">CSS</span>
+                            <span class="tag tagJS">JavaScript</span>
+                        </div>
+                        <a href="project5.html" class="btn btnProject">Ver Projeto</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Seção com a equipe -->
+        <section id="team" class="team">
+            <div class="container">
+                <div class="sectionHeader">
+                    <h2 class="sectionTitle">Nossa Equipe</h2>
+                    <p class="sectionDescription">
+                        Conheça os desenvolvedores por trás dos projetos. Cada um com suas especialidades.
+                    </p>
+                </div>
+                <div class="teamBox">
+                    <div class="teamCard">
+                        <div class="teamPhoto">
+                            <img src="img/lorenzo.jpeg"/>
+                        </div>
+                        <h3 class="teamName">Lorenzo</h3>
+                        <p class="teamRole">Front-end Developer</p>
+                        <p class="teamDescription">Especialista em HTML, CSS, Javascript e React.</p>
+                        <div class="teamSocial">
+                            <a href="https://github.com/lorenzozardo" target="_blank" class="socialLink"><img src="img/github.svg"></a>
+                            <a href="https://www.linkedin.com/in/lorenzo-zardo/" target="_blank" class="socialLink"><img src="img/linkedin.svg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="teamCard">
+                        <div class="teamPhoto">
+                            <img src="img/pedro.jpeg" />
+                        </div>
+                        <h3 class="teamName">Pedro</h3>
+                        <p class="teamRole">Full-stack Developer</p>
+                        <p class="teamDescription">Especialista em C#, HTML, CSS, JavaScript e React.</p>
+                        <div class="teamSocial">
+                            <a href="https://github.com/PedroFontanaMartins" target="_blank" class="socialLink"><img src="img/github.svg"></a>
+                            <a href="https://www.linkedin.com/in/pedro-fontana-martins-7984a12b0/" target="_blank" class="socialLink"><img src="img/linkedin.svg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="teamCard">
+                        <div class="teamPhoto">
+                            <img src="img/arthur.jpeg" />
+                        </div>
+                        <h3 class="teamName">Arthur</h3>
+                        <p class="teamRole">Front-end Developer</p>
+                        <p class="teamDescription">Especialista em HTML, CSS, JavaScript e React.</p>
+                        <div class="teamSocial">
+                            <a href="https://github.com/arthuroliveira" target="_blank" class="socialLink"><img src="img/github.svg"></a>
+                            <a href="https://www.linkedin.com/in/arthur-oliveira-94770626a/" target="_blank" class="socialLink"><img src="img/linkedin.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de contato -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contactContent">
+                    <h2 class="sectionTitle">Vamos trabalhar juntos?</h2>
+                    <p class="sectionDescription">Estamos sempre abertos a novos desafios e oportunidades. Entre em contato conosco!</p>
+                    <div class="contactButtons">
+                        <a href="mailto:contato@devtrio.com" target="_blank" class="btn btnPrimary">Enviar Email</a>
+                        <a href="https://wa.me/5551999999999" target="_blank" class="btn btnWhats">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Rodapé com a logo -->
     <footer class="footer">
